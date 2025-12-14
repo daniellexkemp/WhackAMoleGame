@@ -1,42 +1,59 @@
 /*************************************************************************
+ * Team: G1
  * Project: WhackAMoleGame
  * Author: Danielle Kemp
- * Date: December 2, 2025
- * Purpose: Tracks game time and adjusts difficulty for Whack-A-Mole.
+ * Date: 12/13/2025
+ * Class: GameTimer
+ * Description: Tracks game time and adjusts difficulty for Whack-A-Mole.
  *************************************************************************/
+package WhackAMole;
 
 public class GameTimer {
     private int timeLeft;
     private int difficultyLevel;
     private boolean gameOver;
-
-    // Constructor stub
+    /**
+     * constructor initializes timer with total seconds
+     * @param seconds - game length
+     */
     public GameTimer(int seconds) {
-        // placeholder, initialize variables later
+        this.timeLeft = seconds;
+        this.difficultyLevel = 1; // game starts at level 1
+        this.gameOver = false;
     }
-
-    // Starts the timer (stub)
+    // counter starts
     public void start() {
-        // placeholder, actual countdown logic will be added later
+        new Thread(() -> {
+            while (timeLeft > 0) {
+                try {
+                    Thread.sleep(1000); // 1 second intervals
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                timeLeft--;
+                updateDifficulty();
+            }
+            gameOver = true;
+        }).start();
     }
-
-    // Stops the timer early (stub)
+    // stops the timer early if needed
     public void stop() {
-        // placeholder, logic to stop timer will be added later
+        gameOver = true;
     }
-
-    // Returns seconds left (stub)
+    // returns the seconds left
     public int getTimeLeft() {
-        return 0; // placeholder value
+        return timeLeft;
     }
-
-    // Returns current difficulty level (stub)
+    //returns current difficulty level
     public int getDifficultyLevel() {
-        return 1; // placeholder value
+        return difficultyLevel;
     }
-
-    // Checks if time is up (stub)
+    // updates difficulty based on time elapsed (Score or Mole hits)
+    private void updateDifficulty() {
+        difficultyLevel = 1 + (30 - timeLeft) / 10; // every 10 seconds
+    }
+    // returns true if time is up
     public boolean isGameOver() {
-        return false; // placeholder value
+        return gameOver;
     }
 }
