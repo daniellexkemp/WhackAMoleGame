@@ -31,7 +31,7 @@ Players try to click on moles that randomly appear in holes before they disappea
 - **Mole**
   > Author: *Lindsey Lear*  
   Represents an individual mole and its behavior.
-- **GameTimer / DifficultyManager**
+- **GameTimer**
   > Author: *Danielle Kemp*  
   Tracks game time and adjusts difficulty as the game progresses.
 
