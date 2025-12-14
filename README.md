@@ -74,9 +74,26 @@ We’ll build a small game using arrays and event handling in Java.
 
 ---
 
+## 🖼️ Media
+Screenshots and other visual assets for the Whack-A-Mole game are located in the `media` folder.  
 
-## 📸 Media
-Screenshots and other assets will be placed in the `media` folder later.
+- `WhackAMoleGame.jpg` – Main menu and welcome screen  
+- `StartGame.jpg` – Game start prompt  
+- `GameBoard.jpg` – Gameplay board with moles  
+- `DifficultyIncrease.jpg` – Difficulty increase over time  
+- `EndGame.jpg` – Game over screen  
+- `EndGame_PlayAgain.jpg` – Option to play again  
+- `QuitGame.jpg` – Quit game prompt
+
+These images demonstrate the gameplay, UI layout, and score/difficulty display.
+
+---
+
+## ℹ️ Notes on IDE Compatibility
+
+This project was developed in **IntelliJ IDEA**. The console alignment and emoji display may appear differently in other IDEs such as **NetBeans** or running from a terminal, but the game logic and functionality remain the same.  
+
+Screenshots are included in the `media/` folder to show how the game should appear during play.
 
 ---
 ## 📄 License / Rights
