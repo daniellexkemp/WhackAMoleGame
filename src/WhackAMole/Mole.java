@@ -1,9 +1,12 @@
 /******************************************************
+* Team: G1
 * Project: WhackAMoleGame
 * Author: Lindsey Lear
-* Date: 12/02/2025
+* Date: 12/13/2025
 * Purpose: Class symbolizing a Mole in WhackAMole game. 
 *******************************************************/
+package WhackAMole;
+
 public class Mole {
 
     private int column; //column on board
