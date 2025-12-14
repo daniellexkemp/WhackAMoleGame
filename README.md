@@ -101,7 +101,7 @@ This project and its source code are the property of the WhackAMoleGame team.
 Only the listed team members may use, modify, or distribute this code.
 Any use by others without explicit permission is prohibited.
 
-You can also add a note at the top of the README for extra clarity:
-
 ⚠️ Note: This repository is private to the WhackAMoleGame team.  
+This project was developed for educational purposes as part of the INFO-C 211 course at Indiana University and is not intended for commercial use.  
 Do not copy, distribute, or use this code without permission.
+
