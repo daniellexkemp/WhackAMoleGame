@@ -52,8 +52,6 @@ We’ll build a small game using arrays and event handling in Java.
 
 ## 🛠 Technologies
 - Java ☕  
-- Swing (for GUI)  
-- Arrays and event handling  
 
 ---
 
