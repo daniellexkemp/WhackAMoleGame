@@ -19,7 +19,7 @@ Players try to click on moles that randomly appear in holes before they disappea
 ----
 
 ## 📦 Class Structure
-- **WhackAMoleGame**
+- **WhackAMole**
   > Author: *Jacob Clark*  
   Main Class that runs the game loop and interacts with other classes.
 - **GameBoard**
@@ -38,15 +38,16 @@ Players try to click on moles that randomly appear in holes before they disappea
 ----
 
 ## 🎯 Project Overview
-The goal of this project is to practice Java programming, object-oriented design, and GUI development.  
+The goal of this project is to practice Java programming, object-oriented design, and console-based user interface development.  
 We’ll build a small game using arrays and event handling in Java.
+
 
 ----
 ## ✨ Features
 - Click on moles before they disappear  
 - Dynamic difficulty adjustment as time progresses  
 - Score tracking for hits and misses  
-- Simple and responsive GUI  
+- Simple console-based UI
 
 ---
 
@@ -59,17 +60,19 @@ We’ll build a small game using arrays and event handling in Java.
 1. Clone the repository:  
    ```bash
    git clone https://github.com/yourusername/WhackAMoleGame.git
-   
+   ```
 2. Navigate to the project folder:
    ```bash
    cd WhackAMoleGame
+   ```
 3. Compile the Java files:
    ```bash
    javac *.java
+   ```
 4. Run the game:
    ```bash
    java WhackAMoleGame
-
+   ```
 ---
 
 ## 🖼️ Media
