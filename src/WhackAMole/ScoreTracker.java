@@ -4,7 +4,7 @@
  * Author: Susan Rogers
  * Date: 12/13/2025
  * Class: ScoreTracker
- * Description:
+ * Description: Score tracking and game logic.
  ***********************************************************/
 package WhackAMole;
 
