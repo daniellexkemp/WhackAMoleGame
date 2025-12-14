@@ -4,53 +4,54 @@
 * Date: 12/02/2025
 * Purpose: Class symbolizing a Mole in WhackAMole game. 
 *******************************************************/
-
 public class Mole {
-    // variables (stub)
-    private int column; // column on board
-    private int row; // row on board
-    private boolean active; // mole is active or inactive
+
+    private int column; //column on board
+    private int row; //row on board
+    private boolean active; //mole is active or inactive
     
-    // Constructor (stub)
-    public Mole() { // inactive mole, row and column are -1
-        // placeholder values
+    //Constructor
+    public Mole() { //inactive mole, row and column are -1
+        this.column = -1;
+        this.row = -1;
+        this.active = false;
     }
     
-    // Active mole and removed mole (stub)
-    public void activeMole(int r, int c) { // active mole that spawns on board
-        // placeholder values
-    }
-    
-    // mole is removed (stub)
-    public void removeMole() { 
-        // placeholder values
+    //Active mole and removed mole
+    public void activeMole(int r, int c) { //active mole that spawns on board
+        this.column = c;
+        this.row = r;
+        this.active = true;
     }
 
-    /* 
-    * Checks if mole was whacked at the row and column, mole disapears if hit
-    * Returns true if mole was hit, returns false if not (stub)
-    */
-    public boolean whackMole(int r, int c) { 
-        // return placeholder
-        }
-        // return placeholder
+    public void removeMole() { //mole is removed
+        this.column = -1;
+        this.row = -1;
+        this.active = false;
     }
-    
+
     /*
-    * Getters
-    * return column of mole (stub)
+    * Checks if mole was whacked at the row and column, mole disapears if hit
+    * Returns true if mole was hit, returns false if not
     */
-    public int getColumn() { 
-        // return placeholder
+    public boolean whackMole(int r, int c) {
+        if (active && r == row && c == column) {
+            removeMole(); //mole is removed
+            return true;
+        }
+        return false;
     }
     
-    // return row of mole (stub)
-    public int getRow() { 
-        // return placeholder
+    //Getters
+    public int getColumn() { //return column of mole
+        return column;
     }
-    
-    // return true if mole is active (stub)
-    public boolean isActive() { 
-        // return placeholder
+
+    public int getRow() { //return row of mole
+        return row;
+    }
+
+    public boolean isActive() { //return true if mole is active
+        return active;
     }
 }
